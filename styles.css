@@ -560,7 +560,7 @@ body {
   display: grid;
   place-items: center;
   padding-inline: 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .grid-container p:not([class]) {
@@ -736,7 +736,7 @@ grid-template-areas:
   }
 
   .grid-container--technology {
-      grid-template-columns:   minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
+      grid-template-columns: minmax(2rem, 10vw) minmax(0, 10rem) minmax(0, 30rem) minmax(0, 40rem) minmax(2rem, 1fr);
       justify-items: start;
       grid-template-areas:
       '. title title title .'
@@ -750,6 +750,11 @@ grid-template-areas:
   }
   .grid-container--technology > .number_indicator{
 flex-direction: column;
+  }
+  .number_indicator > * {
+    width: 80px;
+height: 80px;
+    font-size: var(--fs-6);
   }
 
 }
