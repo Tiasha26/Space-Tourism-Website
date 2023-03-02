@@ -484,6 +484,7 @@ body {
 /* home */
 .home {
   background-image: url(./assets/home/background-home-mobile.jpg);
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 35rem) {
@@ -744,7 +745,8 @@ grid-template-areas:
 
     .grid-container--technology > picture {
       grid-column:  span 2;
-      max-width: 90%;
+      max-width: 100%;
+      justify-items: end;
   }
   .grid-container--technology > .number_indicator{
 flex-direction: column;
