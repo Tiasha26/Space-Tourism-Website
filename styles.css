@@ -484,7 +484,6 @@ body {
 /* home */
 .home {
   background-image: url(./assets/home/background-home-mobile.jpg);
-  background-repeat: no-repeat;
 }
 
 @media (min-width: 35rem) {
@@ -560,7 +559,7 @@ body {
   display: grid;
   place-items: center;
   padding-inline: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .grid-container p:not([class]) {
@@ -736,25 +735,20 @@ grid-template-areas:
   }
 
   .grid-container--technology {
-      grid-template-columns: minmax(2rem, 10vw) minmax(0, 10rem) minmax(0, 30rem) minmax(0, 40rem) minmax(2rem, 1fr);
+      grid-template-columns:   minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
       justify-items: start;
       grid-template-areas:
-      '. title title title .'
-      '. tabs  content image .';
+      '. title title .'
+      '. content image .'
+      '. tabs image .';
   }
 
-    .grid-container--technology > picture {
+  .grid-container--technology > picture {
       grid-column:  span 2;
-      max-width: 100%;
-      justify-items: end;
+      max-width: 90%;
   }
-  .grid-container--technology > .number_indicator{
-flex-direction: column;
-  }
-  .number_indicator > * {
-    width: 80px;
-height: 80px;
-    font-size: var(--fs-6);
+  .number_indicator .btn {
+display: block;
   }
 
 }
